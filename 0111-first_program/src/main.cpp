@@ -7,9 +7,8 @@ int main()
     int num{ };
     std::cin >> num;
 
-    num = num * 2;  // double num's value, then assign that valu back to num
-
-    std::cout << "Double that number is: " << num << '\n';
+    int doubleNum{ num * 2 };  // define a new variable and initialize it with num * 2
+    std::cout << "Double that number is: " << doubleNum << '\n';
 
     return 0;
 }
