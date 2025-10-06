@@ -1,19 +1,27 @@
 #include <iostream> // for std::cout
 
-// Definition of user-defined function doPrint()
-// doPrint() is the called function in this example
-void doPrint()
+void doB()
 {
-    std::cout << "In doPrint()\n";
+    std::cout << "In doB()\n";
+}
+
+void doA()
+{
+    std::cout << "Starting doA()\n";
+
+    doB();
+
+    std::cout << "Ending doA()\n";
 }
 
 // Definition of user-defined function main()
 int main()
 {
     std::cout << "Starting main()\n";
-    doPrint();                          // Interrupt main() by making a function call to doPrint.  main() is the caller.
-    doPrint();                          // doPrint() called for the second time
-    std::cout << "Ending main()\n";     // This statement is executed after doPrint() ends
+
+    doA();
+
+    std::cout << "Ending main()\n";
 
     return 0;
 }
