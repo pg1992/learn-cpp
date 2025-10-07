@@ -4,10 +4,10 @@ LDFLAGS =
 
 all: bin/main.elf
 
-bin/main.elf: obj/main.o obj/add.o
+bin/main.elf: obj/main.o obj/input.o
 	$(CXX) $(LDFLAGS) $^ -o $@
 
-obj/add.o: src/add.cpp
+obj/input.o: src/input.cpp
 	$(CXX) -c $(CXXFLAGS) $< -o $@
 
 obj/main.o: src/main.cpp
@@ -15,4 +15,4 @@ obj/main.o: src/main.cpp
 
 .PHONY: clean
 clean:
-	rm obj/main.o bin/main.elf
+	rm obj/*.o bin/*.elf
