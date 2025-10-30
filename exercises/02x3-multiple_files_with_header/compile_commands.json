@@ -1,0 +1,48 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-c",
+      "-ggdb3",
+      "-pedantic",
+      "-pedantic-errors",
+      "-Wall",
+      "-Werror",
+      "-Wextra",
+      "-Weffc++",
+      "-Wconversion",
+      "-Wsign-conversion",
+      "-std=c++23",
+      "-I./include/",
+      "-o",
+      "obj/main.o",
+      "src/main.cpp"
+    ],
+    "directory": "/home/hefesto/src/tutorial/cpp/learn-cpp/exercises/02x3-multiple_files_with_header",
+    "file": "/home/hefesto/src/tutorial/cpp/learn-cpp/exercises/02x3-multiple_files_with_header/src/main.cpp",
+    "output": "/home/hefesto/src/tutorial/cpp/learn-cpp/exercises/02x3-multiple_files_with_header/obj/main.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-c",
+      "-ggdb3",
+      "-pedantic",
+      "-pedantic-errors",
+      "-Wall",
+      "-Werror",
+      "-Wextra",
+      "-Weffc++",
+      "-Wconversion",
+      "-Wsign-conversion",
+      "-std=c++23",
+      "-I./include/",
+      "-o",
+      "obj/io.o",
+      "src/io.cpp"
+    ],
+    "directory": "/home/hefesto/src/tutorial/cpp/learn-cpp/exercises/02x3-multiple_files_with_header",
+    "file": "/home/hefesto/src/tutorial/cpp/learn-cpp/exercises/02x3-multiple_files_with_header/src/io.cpp",
+    "output": "/home/hefesto/src/tutorial/cpp/learn-cpp/exercises/02x3-multiple_files_with_header/obj/io.o"
+  }
+]
