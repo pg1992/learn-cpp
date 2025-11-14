@@ -1,0 +1,24 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-c",
+      "-ggdb3",
+      "-pedantic",
+      "-pedantic-errors",
+      "-Wall",
+      "-Werror",
+      "-Wextra",
+      "-Wconversion",
+      "-Wsign-conversion",
+      "-std=c++23",
+      "-I./plog-1.1.11/include/",
+      "-o",
+      "obj/main.o",
+      "src/main.cpp"
+    ],
+    "directory": "/home/hefesto/src/tutorial/cpp/learn-cpp/exercises/0305-logging",
+    "file": "/home/hefesto/src/tutorial/cpp/learn-cpp/exercises/0305-logging/src/main.cpp",
+    "output": "/home/hefesto/src/tutorial/cpp/learn-cpp/exercises/0305-logging/obj/main.o"
+  }
+]
