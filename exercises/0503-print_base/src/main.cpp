@@ -24,10 +24,23 @@ void printBitset()
     std::cout << std::bitset<4>{ 0b1010 } << '\n';
 }
 
+void printFormat()
+{
+    std::cout << std::format("{:b}\n", 0b1010);     // C++20, {:b} formats the argument as binary digits
+    std::cout << std::format("{:#b}\n", 0b1010);    // C++20, {:#b} formats the argument as 0b-prefixed binary digits
+}
+
+void printPrint()
+{
+    std::println("{:b} {:#b}", 0b1010, 0b1010);     // C++23, format/print two arguments (same as above) and a newline
+}
+
 int main()
 {
     printBase();
     printBitset();
+    printFormat();
+    printPrint();
 
     return 0;
 }
